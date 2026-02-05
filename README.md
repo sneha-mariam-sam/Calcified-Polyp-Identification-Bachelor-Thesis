@@ -1,11 +1,11 @@
 # Calcified-Polyp-Identification
-This repository contains a Convolutional Neural Network (CNN) model for binary image classification using Keras. It includes data augmentation, model training, validation, and saving of trained weights. The project is structured to classify images into two categories with improved generalization through real-time image transformations.
+This repository contains my Bachelor Thesis project - Convolutional Neural Network (CNN) model for binary image classification using Keras. It includes data augmentation, model training, validation, and saving of trained weights. The project is structured to classify images into two categories with improved generalization through real-time image transformations.
 
 This project was completed in 2020.
 
 # Image Classification Using Convolutional Neural Networks (CNN)
 
-##Motivation
+## Motivation
 The inspiration for this project, Calcification of Polyp Identification, comes from the need to improve medical diagnostics. Polyps can vary in texture, with calcification being a key indicator of potential health concerns. Traditional ultrasound scans can detect polyps but do not analyze their texture effectively. By leveraging deep learning and image processing techniques, this project aims to automate the classification of polyps based on their calcification, assisting in early diagnosis and better medical decision-making.
 
 ## Abstract
@@ -81,6 +81,18 @@ After training, the model weights are saved as:
 ```python
 model.save_weights('50_epochs.h5')
 ```
+
+## Conclusion
+The results showed a clear improvement in model performance as training epochs increased. With 10 training epochs, the model achieved an accuracy of 66.67%. Increasing the training duration to 100 epochs improved accuracy to 75%, while extending training to 250 epochs resulted in 100% classification accuracy on the available test dataset. This indicates that sufficient training iterations are critical for enabling the model to learn distinguishing patterns effectively.
+
+The project highlights the importance of feature extraction, data transformation, and iterative model training in improving classification performance. It also demonstrates my ability to work with complex medical imaging data, apply analytical techniques, and evaluate model performance using quantitative metrics.
+
+| Training Epochs | Accuracy |
+| --------------- | -------- |
+| 10              | 66.67%   |
+| 100             | 75%      |
+| 250             | 100%     |
+
 
 ## Future Improvements
 - Implement **early stopping** to prevent overfitting.
