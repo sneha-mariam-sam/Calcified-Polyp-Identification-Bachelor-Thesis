@@ -1,7 +1,8 @@
 # Calcified-Polyp-Identification
-This repository contains my Bachelor Thesis project - Convolutional Neural Network (CNN) model for binary image classification using Keras. It includes data augmentation, model training, validation, and saving of trained weights. The project is structured to classify images into two categories with improved generalization through real-time image transformations.
 
-This project was completed in 2020.
+This project was completed as part of my Bachelor Thesis in B.E. Computer Science Engineering in 2020. The objective was to develop a machine learning pipeline capable of identifying calcified polyps in ultrasound images using feature extraction and convolutional neural networks.
+
+Due to medical data privacy regulations, the original dataset cannot be shared publicly.
 
 # Image Classification Using Convolutional Neural Networks (CNN)
 
@@ -24,8 +25,17 @@ The entire workflow is divided into the following key phases:
 - **Data Augmentation**: Enhances dataset variability to improve generalization.
 - **CNN-based Feature Extraction**: Uses convolutional layers to extract meaningful features from images.
 - **Binary Classification**: Employs a sigmoid activation function for distinguishing between two classes.
-- **Training with Keras**: Utilizes `fit_generator` for model training with real-time augmentation.
+- **Training with Keras**: Utilizes Keras data generators for model training with real-time augmentation.
 - **Model Persistence**: Saves trained weights for further analysis and use.
+
+## Dataset Description
+The dataset consisted of anonymized ultrasound images classified into two categories:
+- Calcified polyps
+- Non-calcified polyps
+
+All images were preprocessed, augmented and the dataset was split into training and validation sets to evaluate model generalization performance.
+
+Due to medical privacy and ethical restrictions, the dataset cannot be publicly shared.
 
 ## Dataset Structure
 The images should be organized in the following format:
