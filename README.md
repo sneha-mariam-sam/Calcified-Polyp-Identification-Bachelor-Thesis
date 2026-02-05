@@ -75,17 +75,6 @@ The model is compiled with:
 - **Optimizer**: RMSprop
 - **Metric**: Accuracy
 
-It is trained using `fit_generator` with real-time data augmentation:
-```python
-model.fit_generator(
-    train_generator,
-    steps_per_epoch=13 // batch_size,
-    epochs=10,
-    validation_data=validation_generator,
-    validation_steps=160 // batch_size
-)
-```
-
 ## Saving the Model
 After training, the model weights are saved as:
 ```python
